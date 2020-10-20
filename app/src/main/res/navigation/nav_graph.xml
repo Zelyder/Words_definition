@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/wordOverviewFragment2">
+    <fragment
+        android:id="@+id/wordOverviewFragment2"
+        android:name="com.zelyder.wordsdefinition.ui.fragments.WordOverviewFragment"
+        android:label="fragment_word_overview"
+        tools:layout="@layout/fragment_word_overview" />
+</navigation>

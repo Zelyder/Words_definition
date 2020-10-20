@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.zelyder.wordsdefinition.viewmodels.WordOverviewViewModel" />
+        
+        <variable
+            name="clickListener"
+            type="com.zelyder.wordsdefinition.ui.adapters.InputFieldListener" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+
+        <EditText
+            android:id="@+id/etWordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/et_word_input_text"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            app:actionListener="@{clickListener}" />
+    </FrameLayout>
+</layout>
